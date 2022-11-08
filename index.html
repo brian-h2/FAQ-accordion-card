@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="main.css">
+  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+</head>
+<body>
+  <!--Title-->
+  <main class="contenido-general">
+    <section class="contenido-general__woman">
+      <img class="contenido-general__woman__img" src="images/illustration-woman-online-mobile.svg">
+      <div class="contenido-general__woman__img-shadow"></div>
+    </section>
+  
+    
+    <section class="contenido-general__s2">
+    <h1 class="contenido-general__faq">FAQ</h1>
+    <ul class="contenido-general__s2__list">
+      <li>
+        <div class="contenido-general__s2__list-questions" id="question">
+          <img src="./images/icon-arrow-down.svg" class="contenido-general__s2__list__image">
+          <h2 class="contenido-general__s2__list__title" id="contenido-general__title">How many team members can I invite?</h2>
+        </div>
+        <p class="contenido-general__s2__list__text" id="response">You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
+      </li>
+      <li>
+        <div class="contenido-general__s2__list-questions" id="question">
+          <img src="./images/icon-arrow-down.svg" class="contenido-general__s2__list__image">
+          <h2 class="contenido-general__s2__list__title">What is the maximum file upload size?</h2>
+        </div>
+        <p class="contenido-general__s2__list__text" id="response">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+      </li>
+      <li>
+        <div class="contenido-general__s2__list-questions" id="question">
+          <img src="./images/icon-arrow-down.svg" class="contenido-general__s2__list__image">
+          <h2 class="contenido-general__s2__list__title">How do I reset my password?</h2>
+        </div>
+        <p class="contenido-general__s2__list__text" id="response">Click “Forgot password” from the login page or “Change password” from your profile page.
+        A reset link will be emailed to you.</p>
+      </li>
+      <li>
+        <div class="contenido-general__s2__list-questions" id="question">
+          <img src="./images/icon-arrow-down.svg" class="contenido-general__s2__list__image">
+          <h2 class="contenido-general__s2__list__title">Can I cancel my subscription?</h2>
+        </div>
+        <p class="contenido-general__s2__list__text" id="response">Yes! Send us a message and we’ll process your request no questions asked. </p>
+      </li>
+      <li>
+        <div class="contenido-general__s2__list-questions"  id="question">
+          <img src="./images/icon-arrow-down.svg" class="contenido-general__s2__list__image">
+          <h2 class="contenido-general__s2__list__title">Do you provide additional support?</h2>
+        </div>
+        <p class="contenido-general__s2__list__text" id="response">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+      </li>
+    </ul>
+    </section>
+  </main>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/brian-heredia-4a7a12240/">Brian Heredia</a>.
+  </footer>
+  <script>
+
+  let title = document.getElementById('question')
+  let nodo = document.getElementById('response');
+  const showQuestion = () => {
+    title.addEventListener('click', () => {
+
+    if(nodo.style.display === "none") {
+          nodo.style.display = "block";
+    } else{
+                nodo.style.display = "none";
+    }
+  })  
+  }
+
+  showQuestion()
+  
+  </script>
+</body>
+</html>
